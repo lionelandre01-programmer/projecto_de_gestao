@@ -43,15 +43,15 @@
                     <a href="{{ route('funcionario.show', $funcionarios->id) }}" style="color: black;">Ver</a>
                 </button>
 
-                    <button>
-                        <a href="{{ route('funcionario.edit', $funcionarios->id) }}" style="color: black;">Editar</a>
-                    </button>
+                <button>
+                    <a href="{{ route('funcionario.edit', $funcionarios->id) }}" style="color: black;">Editar</a>
+                </button>
                     
-                    <form action="{{ route('funcionario.destroy', $funcionarios->id) }}" method="POST">
-                        @csrf
-                        @method('DELETE')
-                        <button type="submit" onclick="return confirm('Deseja eliminar?')">Deletar</button>
-                    </form>
+                <form action="{{ route('funcionario.destroy', $funcionarios->id) }}" method="POST">
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" onclick="return confirm('Deseja eliminar?')">Deletar</button>
+                </form>
 
             </td>
         </tr>

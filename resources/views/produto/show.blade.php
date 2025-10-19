@@ -29,7 +29,7 @@
 
         <div class="div_btn">
             <button>
-                <a href="{{ route('produto.index') }}" style="color: black;">Voltar</a>
+                <a href="{{ Auth::user()->role != 'Cliente' ? route('produto.index') : route('produto.cliente') }}" style="color: black;">Voltar</a>
             </button>
         </div>
 

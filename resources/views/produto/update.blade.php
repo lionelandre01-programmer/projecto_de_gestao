@@ -59,7 +59,7 @@
     <input name="name_user" value="{{ $produto->name_user }}" readonly>
 
     <button type="submit" 
-    style="margin: 10px; width: 120px; height: 40px; background: green;">
+    style="margin: 10px; width: 120px; height: 40px; background: yellow;">
     Actualizar Estoque
     </button>
 

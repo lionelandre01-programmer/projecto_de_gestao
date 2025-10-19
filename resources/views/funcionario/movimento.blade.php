@@ -26,6 +26,7 @@
         <th>Produto</th>
         <th>Tipo</th>
         <th>Quantidade</th>
+        <th>Funcionário</th>
         <th>Data</th>
     </tr>
 
@@ -36,6 +37,7 @@
             <td>{{ $movimentos->produto }}</td>
             <td>{{ $movimentos->tipo }}</td>
             <td>{{ $movimentos->quantity }}</td>
+            <td>{{ $movimentos->usuario }}</td>
             <td>{{ $movimentos->created_at }}</td>
         </tr>
 

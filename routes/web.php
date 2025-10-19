@@ -82,6 +82,7 @@ Route::group(['prefix' => 'worker', 'middleware' => 'auth'], function(){
     Route::get('/funcionarios',[FuncionarioController::class, 'worker'])->name('funcionario.worker')->middleware('permissao');
     Route::get('/clientes',[FuncionarioController::class, 'cliente'])->name('funcionario.cliente')->middleware('permissao');
     Route::post('/actualizado/{produto}',[FuncionarioController::class, 'updateProduto'])->name('update');
+    Route::post('/categoria/{id}',[ClienteController::class, 'categoria'])->name('categoria');
 
 });
 

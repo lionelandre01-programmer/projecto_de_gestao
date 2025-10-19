@@ -54,19 +54,21 @@
             <td>{{ $produtos->name }}</td>
             <td>{{ number_format($produtos->price, 2, ',','.') }}kz</td>
             <td style="display: flex; justify-content: space-around;">
-                <button>
-                    <a href="{{ route('produto.show', $produtos->id) }}" style="color: black;">Ver</a>
+                <button style="border-radius: 2px;">
+                    <a href="{{ route('produto.show', $produtos->id) }}" style="color: black; border-radius: 5px;">Ver</a>
                 </button>
 
                 @if (Auth::check() && Auth::user()->role != 'Worker' && Auth::user()->role != 'Cliente')
-                    <button>
+                <button style="background-color: yellow;  border-radius: 2px;">
                     <a href="{{ route('produto.edit', $produtos->id) }}" style="color: black;">Editar</a>
                 </button>
                 
                 <form action="{{ route('produto.destroy', $produtos->id) }}" method="POST">
                     @csrf
                     @method('DELETE')
-                    <button type="submit" onclick="return confirm('Deseja eliminar?')">Deletar</button>
+                    <button type="submit" onclick="return confirm('Deseja eliminar?')" style="background-color: red; border-radius: 2px;">
+                    Deletar
+                    </button>
                 </form>
                 @endif
             </td>

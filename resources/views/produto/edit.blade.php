@@ -24,7 +24,7 @@
         <textarea name="description">{{ $produto->description }}</textarea>
 
         <div class="div_btn">
-            <button type="submit">Actualizar</button>
+            <button type="submit" style="background-color: yellow; border-radius: 2px;">Actualizar</button>
         <button>
             <a href="{{ route('produto.index') }}" style="color: black;">Voltar</a>
         </button>

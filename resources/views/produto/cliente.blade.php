@@ -44,7 +44,7 @@
             <td>{{ $produtos->name }}</td>
             <td>{{ number_format($produtos->price, 2, ',','.') }}kz</td>
             <td style="display: flex; justify-content: space-around;">
-                <button>
+                <button style="border-radius: 2px;">
                     <a href="{{ route('produto.show', $produtos->id) }}" style="color: black;">Ver</a>
                 </button>
 
@@ -53,7 +53,7 @@
                     @csrf
                     @method('POST')
                     <input type="hidden" name="search" value="{{$produtos->id}}" readonly>
-                    <button>Comprar</button>
+                    <button style="background-color: yellow; border-radius: 2px;">Comprar</button>
                 </form>
                 
 

@@ -26,6 +26,7 @@
         <th>Nome</th>
         <th>Gênero</th>
         <th>Tipo De Cliente</th>
+        <th>Acção</th>
     </tr>
 
     @foreach ($cliente as $clientes)
@@ -35,6 +36,16 @@
             <td>{{ $clientes->name }}</td>
             <td>{{ $clientes->genero }}</td>
             <td>{{ $clientes->tipo }}</td>
+            <td>
+                <form action="{{ route('categoria', $clientes->id) }}" method="POST" style="width: 100%;">
+                    @csrf
+                    @method('POST')
+                    <button class="btn-encomenda" style="background: green; width: 100%;">
+                        Categorizar
+                    </button>
+                </form>
+                
+            </td>
         </tr>
 
     @endforeach

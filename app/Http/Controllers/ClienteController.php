@@ -139,5 +139,24 @@ class ClienteController extends Controller
         }
 
     }
+
+    public function categoria($id){
+
+        $cliente = Cliente::find($id);
+
+        if($cliente->tipo == 'Comum'){
+
+            $cliente->tipo = 'Especial';
+            $cliente->save();
+
+        }else{
+
+            $cliente->tipo = 'Comum';
+            $cliente->save();
+        }
+
+        return redirect()->back();
+
+    }
        
 }   

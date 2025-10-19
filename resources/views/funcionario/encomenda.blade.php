@@ -43,7 +43,7 @@
             <td style="display: flex; justify-content: space-around;">
 
                 @if (Auth::user()->role != 'Cliente')
-                    <form action="{{ route('confirmar', $encomendas->id) }}" method="POST">
+                <form action="{{ route('confirmar', $encomendas->id) }}" method="POST">
                     @csrf
                     @method('POST')
                    <button class="btn-encomenda" style="background: green; width: 80px;">

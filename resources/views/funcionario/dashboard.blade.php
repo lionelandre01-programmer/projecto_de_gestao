@@ -35,8 +35,8 @@
             <p>Quantidade: {{ $maiorQuantity->quantity }} Unidades</p>
         </div>
 
-        <div class="min" style=" $menorQuantity->quantity =< 15 ? 'color: red' : 'color: black;' ">
-            <h2>Mínima Quantidade</h2>
+        <div class="min">
+            <h2 style="{{ $menorQuantity->quantity < 16 ? 'color: red': '' }}">Mínima Quantidade</h2>
             <p>Produto: {{ $menorQuantity->name }}</p>
             <p>Quantidade: {{ $menorQuantity->quantity }} Unidades</p>
         </div>
