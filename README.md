@@ -23,4 +23,57 @@ O sistema traz consigo funcionalidades bastante interessantes, como:
 
 OBS: O sistema ainda está sendo trabalhado com o objectivo de melhorar e aumentar as suas funcionalidades.
 
+Tecnologias Utilizadas
+
+    HTML 5
+    CSS 3
+    JavaScript
+    Framework Laravel
+
+Estrutura do Projecto
+
+    -->app
+    -->bootstrap
+    -->config
+    -->database
+    -->public
+    -->resources
+    -->routes
+    -->storage
+    -->tests
+    -->vendor
+    -->editorconfig
+    -->env
+    -->env.exemplo
+    -->gitattributes
+    -->gitignore
+    -->artisan
+    -->composer.json
+    -->composer.lock
+    -->package.json
+    -->phpunit.xml
+    -->README.md
+    -->vite.config.js
+
+Como executar localmente
+
+    1. Clone o repositório
+    2. Armazene-o em C/laragon/www
+    3. Use o terminal redirecione para usar a pasta
+        Ex: rode no terminal C/laragon/www/sua_pasta
+    4. Depois suba o servidor
+        Digitando no terminal 'php artisan serve'
+    5. Acesse: 'localhost: 8000' no navegador
+
+Contactos
+
+    E-mail: lionelgomes084@gmail.com
+    Linkdin: Lionel André
+    WhatsApp: 948972536
+
+Status do Projecto
+
+    ✅ Finalizado
+    📆 Última actualização 25/ 10/ 2025
+
 Desenvolvedor: Lionel Cristóvão André
